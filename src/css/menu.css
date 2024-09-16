@@ -1,0 +1,51 @@
+
+/* Recent view 최근 본 상품 */
+.recentView{
+    width: 120px; background-color: #000;
+    border: 1px solid;
+    position: fixed;
+    right: 20px;
+    top: 100px;  
+    padding: 10px;
+    z-index: 10;
+  }
+  .recentView>div>h4{ font-size: 16px; color: #fff;}
+  .recentViewWrap>img{ border: 2px solid #fff}
+
+
+/*--------menu list---------*/
+.shop_list{box-sizing: border-box; max-width: 1400px; margin: 0 auto; padding: 0; height: auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(264px, 1fr));
+    box-sizing: content-box;}
+  .shop_list ul, .shop_list li{text-decoration: none; list-style: none; margin: 0; padding: 0;}
+  
+  .shop_list li{padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      box-sizing: border-box; border-collapse: collapse; position: relative;
+      border-left: 2px solid #eaeaea;
+  }
+  .shop_list li:nth-child(4n+1){border: none;}
+  
+  
+  .shop_item_img{max-width: 100%; height: auto; align-items: center;}
+  .shop_item_img strong{display: block; width: 100%; height: 100%; 
+    position: absolute; left: 0;top: 0; 
+    background-color: rgba(255, 182, 182, 0.1); z-index: 2;
+      font-size: 24px; text-align: center; line-height: 300px; color: #fff;
+      transition: all 0.3s; letter-spacing: 6px; opacity: 0;
+      border-radius: 0;
+  }
+  .shop_item_img:hover strong{opacity: 1; letter-spacing: 0;border-radius: 30px;}
+  
+  
+  .shop_item_tit{display: block; font-size: 20px; color: #555; font-weight: bold; margin-top: 10px;}
+  .shop_item_desc{display: block; font-size: 12px; line-height: 16px; height: 60px; color: #999; margin: 10px 0 0;}
+  .shop_item_price{font-size: 20px; height: 20px;}
+  .shop_item_cart{font-size: 30px; color: #999; position: absolute; right: 45px; bottom: 75px;}
+  
+  
+  

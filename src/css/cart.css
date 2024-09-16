@@ -1,0 +1,28 @@
+
+.sub_cart{
+    
+}
+
+.cart_table, .cart_table tr, .cart_table td{
+    vertical-align:middle
+}
+
+.cart_amount{
+}
+.cart_amount span{
+    width: 55px;
+    display: inline-block;
+}
+.cart_amount button{
+    padding: 0 7px;
+    outline: none;
+    border: 1px solid #c9ab81;
+    color: #c9ab81;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: all 0.2s;
+}
+.cart_amount button:hover{
+    background-color: #c9ab81;
+    color: #fff;
+}

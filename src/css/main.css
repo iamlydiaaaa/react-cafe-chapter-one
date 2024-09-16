@@ -1,0 +1,14 @@
+.main {}
+.main section{
+    width: 100%;
+    height: 100vh;
+}
+
+.sec01 {
+    display: grid;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: #ede8e2;
+}
+
+.sec02{}
