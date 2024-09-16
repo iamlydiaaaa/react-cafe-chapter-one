@@ -1,4 +1,5 @@
-@import './font/static/pretendard.css';
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+ 
 .start{
   opacity: 0;
 }
@@ -26,12 +27,12 @@
 /* Main page */
 .App {
   text-align: center;
-  font-family: 'Pretendard';
+  font-family: "Prata", serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.5px;
 
-  /* background-color: #e8e0d5; */
+  background-color: #f9e2dd;
   color: #333;
 }
 
@@ -54,35 +55,87 @@
 
 
 .main_color{
-  color: #c9ab81;
+  color: #3a3535;
+  background-color: #f9e2dd;
 }
-/* 
-.main{
-  width: 100%;  margin: 0 auto;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.main_tit{
-  font-size: 5rem;
-  color: #937852;
-
-
-}
-
-.main-bg{
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-} */
-
-
 
 
 .footer{
   width: 100%; height: 200px; 
-  background-color: #222;
+  background-color: #3a3535;
 }
 
+
+
+/* ===== 버튼 공통 ===== */
+.btn_default{
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #3a3535;
+  width: 160px;height: 45px;
+  background-color: transparent;
+  color: #3a3535;
+  transition: all 0.3s;
+  position: relative;
+  cursor: pointer;
+}
+@keyframes btnMove{
+  0%{left: 60%; top: -3px;}
+  16%{left: 99%; top: -3px;}
+  32%{left: 99%; top: 98%;}
+  68%{left: -3px; top: 98%;}
+  84%{left: -3px; top: -3px;}
+  100%{left: 60%; top: -3px;}
+}
+.btn_default::after{
+  content: ""; display: block;
+  width: 5px;height: 5px;
+  background-color: #3a3535;
+  position: absolute; 
+  left: 60%;top: -3px;
+  
+
+}
+/*==호버이펙트==*/
+.btn_default:hover{
+  text-shadow: 0 0 5px rgba(139, 116, 84, 0.2);
+  letter-spacing: 1px;
+}
+.btn_default:hover::after{
+  animation: btnMove linear 1s;
+}
+
+/*두번째 버튼 테마*/
+.btn_2{
+  width: 100%; 
+  padding: 15px 0;
+  background-color: #3a3535;
+  border: 1px solid #3a3535;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn_2:hover{
+  letter-spacing: 3px;
+}
+
+/*세번째 버튼 테마*/
+
+.btn_3{
+  width: 100%;
+  padding: 15px 0;
+  border: 1px solid #3a3535;
+  color: #3a3535;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn_3:hover{
+  letter-spacing: 3px;
+  color: #666;
+  border: 1px solid #666;
+}
+
+/* ===== 버튼 공통 끝 ===== */

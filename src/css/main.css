@@ -1,14 +1,61 @@
 .main {}
 .main section{
     width: 100%;
-    height: 100vh;
+    
 }
 
 .sec01 {
     display: grid;
     max-width: 100vw;
+    height: 100vh;
     overflow: hidden;
-    background-color: #ede8e2;
+    background-color: #ede2e2;
 }
 
-.sec02{}
+.sec02, .sec03{
+    margin: 100px auto;
+    /* padding: 0 10px; */
+}
+.sec02 h2, .sec03 h2{
+    font-size: 3rem;
+    margin-bottom: 80px;
+}
+.sec02 h2::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50vh;
+    margin-top: 50px;
+    background: url(./../img/bgimg02.JPEG);
+    background-position: center;
+    background-size: cover;
+}
+.sec02 p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.btns_wrap{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    background: url(./../img/bgimg01.JPEG) no-repeat center center;
+    background-size: cover
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffd7;
+}
+.insta_wrap{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff90;
+}
+

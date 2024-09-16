@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+  
+
+/* ===== HEADER ===== */
+.hide{text-indent: -9999px; opacity: 0;}
+#header {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:9000;
+    width:100%;
+    height:100px;
+    background-color:transparent;
+    -webkit-transition: top 0.4s cubic-bezier(.64,0,.36,1);
+    transition: top 0.4s cubic-bezier(.64,0,.36,1);
+}
+.scr-up #header {
+	-webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+	box-shadow:1px 1px 5px rgba(0,0,0,0.1);
+}
+.scr-down #header {
+	top:-100px;
+}
+
+/* Logo */
+.logo{
+	font-family: "Prata", serif;
+	cursor: pointer;
+	transition: all 0.3s;
+	/* width: 112px;
+	height: 75px; */
+	/* text-indent: -9999px; */
+	/* background: url(./../img/logo2.jpeg);
+	background-size: cover; */
+}
+.logo:hover{
+	text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.header-logo .logo {
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translateX(-50%) translateY(-50%);
+	font-size: 1.5rem;
+}
+
+#header button{
+    outline: none;
+    border: none;
+}
+
+
+/* ===== HEADER - LEFT MENU ===== */
+
+#header .btn-sitemap-open {
+	width: 40px;
+	height: 40px;
+    position:absolute;
+    left:50px;
+    top: 30px;
+
+    background:url(./../img/menuBtn.png) no-repeat center;
+}
+#header .sitemap-wrap {
+	position:relative;
+	z-index:9999;
+}
+
+.sitemap {
+	
+    }
+#header .sitemap::after {
+	opacity:0;
+	visibility:hidden;
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+    -webkit-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;	
+	cursor:pointer;
+}
+#header .sitemap .inner {
+	display: flex;
+	flex-direction: column;
+	position:fixed;
+	left:-650px;
+	top:0;
+	z-index:100;
+	padding:50px 50px;
+	width:650px;
+	height:100%;
+	background-color:#fff;
+    -webkit-transition: left 0.7s cubic-bezier(.64,0,.36,1);
+    transition: all 0.7s cubic-bezier(.64,0,.36,1);
+    background-image: linear-gradient(-45deg, #eaeaea 0%, #eee 20%, #fff 60%, #fff 100%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+/* ======로고 부분====== */
+.sitemap-logo .logo {
+	/* position:absolute;
+	left:50px;
+	top:50px; */
+	font-size: 1.5rem;
+	text-align: left;
+}
+
+#header .all-menu-wrap {
+	padding-top:100px;
+	height:100%;
+}
+#header .all-menu {
+	height:100%;
+}
+#header .all-menu span{
+    cursor: pointer;
+}
+#header .all-menu > li {
+	position:relative;
+	padding-right:300px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align-last: left;
+}
+#header .all-menu > li > span {
+	display:inline-block;
+	padding:22px 0;
+	font-size:2rem;
+	color:#333333;
+	font-weight:700;
+	word-break:break-all;
+	line-height:32px;
+	letter-spacing:-0.7px;
+    -webkit-transition:all 0.4s ease;
+    transition:all 0.4s ease;
+
+}
+
+
+#header .all-menu > li > span::after {
+	content:"";
+	position:absolute;
+	display: inline-block;
+	left:0;
+	bottom:0;
+	width:0;
+	height:4px;
+	background-color:#f3cbbc;
+	-webkit-transition:width 0.3s ease;
+	transition:width 0.3s ease;	
+}
+
+/* Hover, on effect */
+#header .all-menu > li:hover span{
+    color: #f3cbbc;
+}
+#header .all-menu > li.on > span {
+	color:#f3cbbc;
+}
+#header .all-menu > li > span:hover::after {
+	width:25%;
+}
+
+/* ===== 하위메뉴 ===== */
+#header .all-menu .depth {
+	/* visibility:hidden; */
+	position:absolute;
+	/* right:0; */
+	left: 180px;
+	top:30px;
+    z-index:100;
+	width:230px;
+	-webkit-transition:opacity 0.2s ease, transform 0.4s ease;
+	transition:opacity 0.2s ease, transform 0.4s ease;
+	-webkit-transform:translateX(-10px);
+	transform:translateX(-10px);
+}
+#header .all-menu .depth li {
+	margin-top:22px;
+}
+#header .all-menu .depth li:first-child {
+	margin-top:0;
+}
+#header .all-menu .depth span {
+	display:inline-block;
+	position:relative;
+	font-size:16px;
+	color:#333333;
+	line-height:24px;
+	letter-spacing:-0.5px;
+}
+
+
+
+/* ===== 하위메뉴 끝 ===== */
+
+#header .btn-sitemap-close {
+    position:absolute;
+    right:50px;
+    top:50px;
+    width:18px;
+    height:18px;
+    background:url(./../img/closeBtn.png) no-repeat center;
+}
+#header .all-menu .on .depth {
+	opacity:1;
+	visibility:visible;
+	-webkit-transform:translateX(0);
+	transform:translateX(0);	
+}
+#header .sitemap.open::after {
+	opacity:1;
+	visibility:visible;
+}
+#header .sitemap.open .inner {
+	left:0;
+}
+
+@media (max-width: 650px) {
+	#header .sitemap .inner {
+		left:-100vw;
+		width:100vw;
+	}
+}

@@ -1,0 +1,55 @@
+
+
+/* ===================== BoardRegister 시작 ===================== */
+
+.sec_tit{
+    margin: 50px 0;
+    padding-top: 50px;
+}
+.sec_tit span{
+    display: block;
+    color: #555;
+}
+.sec_tit h2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.board_contact{
+    max-width: 1000px;
+    margin: 0 auto 70px;
+    padding: 10px; 
+}
+
+.board_write{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+.row {width: 100%; margin: 0 auto;}
+.row + .row{margin-top: 35px;}
+
+
+.board_txt{ height: 250px;}
+
+.board_write input, .board_write textarea{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: none;
+    outline: 2px solid #f3cbbc;
+    background-color: #fff0f067;
+    transition: all 0.2s;
+}
+.board_write input:focus, .board_write textarea:focus{
+    outline: 4px solid #f3cbbc;
+    background-color: #fff0f0e8;
+
+}
+.submit_wrap{
+    text-align: center;
+}
+.submit_wrap .btn_default{
+    margin: 0 auto;
+}
+
+/* ===================== BoardRegister 끝 ===================== */

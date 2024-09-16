@@ -26,34 +26,39 @@ function MainPage() {
             <div className="main_title">
               <div className="main_title-inner">
                 <div className="title01">
-                  <div className="title01-inner">CodeOven</div>
+                  <div className="title01-inner">Chapter</div>
                 </div>
                 <div className="title02">
-                  <div className="title02-inner">Studio</div>
+                  <div className="title02-inner">One.</div>
                 </div>
               </div>
             </div>
-
             <div className="image">
               <p></p>
             </div>
           </div>
         </div>
-
-        {/* <button className="button">See Web Menu</button>
-        <button className="button">Contact</button>
-        <button className="button">Location</button> */}
-        {/* <div className="main_tit">
-          <div className="main_tit_wrap">
-            <div class="lettering">
-              <h2>Studio</h2>
-              <h1>CodeOven</h1>
-            </div>
-          </div>
-        </div> */}
       </section>
-      {/* <section className="sec02">하이</section>
-      <section className="sec03">하이2</section> */}
+      <section className="sec02">
+        <h2>
+          It's time to eat, drink, <br /> & get lost in a good book!
+        </h2>
+        <p>
+          Join us as we celebrate food, friendship,
+          <br /> and unforgettable moments that fill our hearts and stomachs!
+        </p>
+        <div className="btns_wrap">
+          <div className="btns">
+            <button className="btn_default">See our Menu</button>
+            <button className="btn_default">Book a table</button>
+            <button className="btn_default">Catering</button>
+          </div>
+        </div>
+      </section>
+      <section className="sec03">
+        <h2>Instagram</h2>
+        <div className="insta_wrap"></div>
+      </section>
     </div>
   );
 }
