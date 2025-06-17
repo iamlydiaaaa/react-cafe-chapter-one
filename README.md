@@ -1,3 +1,21 @@
+# 프로젝트 온라인 실행 방법
+<a href="http://gitpod.io/#https://github.com/iamlydiaaaa/react-cafe-chapter-one/">gitpod.io 바로가기</a>
+방법:
+1. 위 링크 이동 후 회원가입
+2. 온라인 코드뷰어 실행
+3. npm이 자동적으로 build & run 됩니다. (약 1분 소요)
+4. build success 이후 자동적으로 react app 실행됩니다. (혹은 https://3000-iamlydiaaaa-reactcafech-67uzrt04niz.ws-us120.gitpod.io/ 접속)
+
+<br />
+<br />
+
+![menu1](https://github.com/user-attachments/assets/6e648c56-cc9d-4c72-a279-39c12127fe57)
+![about1](https://github.com/user-attachments/assets/0fa2d210-6657-49bc-bc43-9518290b3b64)
+![qna1](https://github.com/user-attachments/assets/ca06d24f-2db6-4173-bd73-7c4b47a74d50)
+![main3](https://github.com/user-attachments/assets/434a21f2-4b41-4470-a8a9-a91d0d7358f4)
+![main2](https://github.com/user-attachments/assets/248a098d-0bc5-4de5-82fe-0dc7a52707c6)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
